@@ -1,0 +1,119 @@
+<html>
+<canvas id="line" height=200px width=300px style="border:2px solid black">
+</canvas>
+<script>
+var c=document.getElementById("line");
+var ctx=c.getContext("2d");
+ctx.font="2px";
+ctx.beginPath();
+ctx.moveTo(0,50);
+ctx.lineTo(300,50);
+ctx.strokeStyle="red";
+ctx.stroke();
+ctx.beginPath();
+ctx.moveTo(0,100);
+ctx.lineTo(300,100);
+ctx.strokeStyle="blue";
+ctx.stroke();
+ctx.beginPath();
+ctx.moveTo(0,150);
+ctx.lineTo(300,150);
+ctx.strokeStyle="green";
+ctx.stroke();
+ctx.beginPath();
+ctx.moveTo(50,0);
+ctx.lineTo(50,200);
+ctx.strokeStyle="yellow";
+ctx.stroke();
+ctx.beginPath();
+ctx.moveTo(100,0);
+ctx.lineTo(100,200);
+ctx.strokeStyle="gray";
+ctx.stroke();
+ctx.beginPath();
+ctx.moveTo(150,0);
+ctx.lineTo(150,200);
+ctx.strokeStyle="Tomato";
+ctx.stroke();
+ctx.moveTo(200,0);
+ctx.lineTo(200,200);
+ctx.strokeStyle="violet";
+ctx.stroke();
+ctx.moveTo(250,0);
+ctx.lineTo(250,200);
+ctx.strokeStyle="pink";
+ctx.stroke();
+
+var grd=ctx.createLinearGradient(0,0,50,0);
+grd.addColorStop(0,"red");
+grd.addColorStop(1,"yellow");
+ctx.fillStyle=grd;
+ctx.fillRect(0,0,50,50);
+
+var grd=ctx.createLinearGradient(100,0,150,0);
+grd.addColorStop(0,"gray");
+grd.addColorStop(1,"Tomato");
+ctx.fillStyle=grd;
+ctx.fillRect(100,0,50,50);
+
+var grd=ctx.createLinearGradient(200,0,250,0);
+grd.addColorStop(0,"violet");
+grd.addColorStop(1,"pink");
+ctx.fillStyle=grd;
+ctx.fillRect(200,0,50,50);
+
+var grd=ctx.createLinearGradient(50,50,100,50);
+grd.addColorStop(0,"yellow");
+grd.addColorStop(1,"gray");
+ctx.fillStyle=grd;
+ctx.fillRect(50,50,50,50);
+
+var grd=ctx.createLinearGradient(150,50,200,50);
+grd.addColorStop(0,"Tomato");
+grd.addColorStop(1,"violet");
+ctx.fillStyle=grd;
+ctx.fillRect(150,50,50,50);
+
+var grd=ctx.createLinearGradient(250,50,300,50);
+grd.addColorStop(0,"pink");
+grd.addColorStop(1,"blue");
+ctx.fillStyle=grd;
+ctx.fillRect(250,50,50,50);
+
+var grd=ctx.createLinearGradient(0,100,50,100);
+grd.addColorStop(0,"red");
+grd.addColorStop(1,"yellow");
+ctx.fillStyle=grd;
+ctx.fillRect(0,100,50,50);
+
+var grd=ctx.createLinearGradient(100,100,150,100);
+grd.addColorStop(0,"gray");
+grd.addColorStop(1,"Tomato");
+ctx.fillStyle=grd;
+ctx.fillRect(100,100,50,50);
+
+var grd=ctx.createLinearGradient(200,100,250,100);
+grd.addColorStop(0,"violet");
+grd.addColorStop(1,"pink");
+ctx.fillStyle=grd;
+ctx.fillRect(200,100,50,50);
+
+var grd=ctx.createLinearGradient(50,150,100,150);
+grd.addColorStop(0,"yellow");
+grd.addColorStop(1,"gray");
+ctx.fillStyle=grd;
+ctx.fillRect(50,150,50,50);
+
+var grd=ctx.createLinearGradient(150,150,200,150);
+grd.addColorStop(0,"Tomato");
+grd.addColorStop(1,"violet");
+ctx.fillStyle=grd;
+ctx.fillRect(150,150,50,50);
+
+var grd=ctx.createLinearGradient(250,150,300,150);
+grd.addColorStop(0,"pink");
+grd.addColorStop(1,"blue");
+ctx.fillStyle=grd;
+ctx.fillRect(250,150,50,50);
+</script>
+</html>
